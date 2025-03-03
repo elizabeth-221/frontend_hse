@@ -10,15 +10,16 @@
         <nav>
             <ul>
                 <li><a href="#">Личный кабинет</a></li>
-                <li><a href="#">Любимые книги</a></li>
-                <li><a href="#">Любимые фильмы и сериалы</a></li>
-                <li><a href="#">Список дел</a></li>
+                <li><a href="#section1">Любимые книги</a></li>
+                <li><a href="#section2">Любимые фильмы и сериалы</a></li>
+                <li><a href="#section3">Список дел</a></li>
+                <li><a href="#section4">Форма</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="section1">
+        <section class="favourite_books" id="section1">
             <h1>Любимые книги</h1>
             
             <div class="russian">
@@ -44,7 +45,7 @@
             </div> 
         </section>
 
-        <section class="films">
+        <section class="favourite_films" id="section2">
             <h1>Любимые фильмы и сериалы</h1>
             <ol>
                 <li>Игра престолов</li>
@@ -52,10 +53,11 @@
                 <li>Дневники вампира</li>
                 <li>Сумерки</li>
                 <li>В метре друг от друга</li>
+                <li>Великолепный век</li>
             </ol>
         </section>
 
-        <section class="section2">
+        <section class="routine" id="section3">
             <h1>Список дел</h1>
 
             <table>
@@ -93,10 +95,85 @@
                 </tbody>
             </table>
         </section>
+
+        <section class="form_like" id="section4">
+            <h1>Форма</h1>
+            <form>
+                <label for="first_name">Имя:</label><br>
+                <input type="text" id="first_name" name="first_name" placeholder="Иван"><br>
+
+                <label for="last_name">Фамилия:</label><br>
+                <input type="text" id="last_name" name="last_name" placeholder="Петров"><br>
+
+                <label for="birthday"></label>День рождения:<br>
+                <input type="date" id="birthday" name="birthday"><br>
+
+                <label for="phone_number">Номер телефона:</label><br>
+                <input type="text" id="phone_number" name="phone_number" placeholder="+7(123)456 78 90"><br>
+
+                <label for="user_email">Электронная почта:</label><br>
+                <input type="email" id="user_email" name="user_email" placeholder="12345@gmail.com">
+
+
+                <h2>Увлекаетесь ли Вы чтением?</h2>
+                <input type="radio" id="yes_read" name="read" value="Да">
+                <label for="yes_read">Да</label><br>
+
+                <input type="radio" id="no_read" name="read" value="Нет">
+                <label for="no_read">Нет</label><br>
+
+                <h2>Ваши любимые жанры:</h2>
+                <input type="checkbox" id="bgenre1" name="bgenre1" value="Фэнтези">
+                <label for="bgenre1">Фэнтези</label><br>
+
+                <input type="checkbox" id="bgenre2" name="bgenre2" value="Фантастика">
+                <label for="bgenre2">Фантастика</label><br>
+
+                <input type="checkbox" id="bgenre3" name="bgenre3" value="Роман">
+                <label for="bgenre3">Роман</label><br>
+
+                <input type="checkbox" id="bgenre4" name="bgenre4" value="Современная проза">
+                <label for="bgenre4">Современная проза</label><br>
+
+                <input type="checkbox" id="bgenre5" name="bgenre5" value="Приключения">
+                <label for="bgenre5">Приключения</label><br>
+
+                <input type="checkbox" id="bgenre6" name="bgenre6" value="Детектив">
+                <label for="bgenre6">Детектив</label><br>
+
+                <input type="checkbox" id="bgenre7" name="bgenre7" value="Юмор">
+                <label for="bgenre7">Юмор</label><br>
+
+
+                <h2>Любите ли Вы смотреть фильмы/сериалы?</h2>
+                <input type="radio" id="yes_watch" name="watch" value="Да">
+                <label for="yes_watch">Да</label><br>
+
+                <input type="radio" id="no_watch" name="watch" value="Нет">
+                <label for="no_watch">Нет</label><br>
+
+                <h2>Ваши любимый жанр:</h2>
+                <label for="films_choose">Выберите любимый жанр:</label>
+                <select id="films_choose" name="films_choose">
+                    <option value="Фэнтези2">Фэнтези</option>
+                    <option value="Фантастика2">Фантастика</option>
+                    <option value="Мелодрама">Мелодрама</option>
+                    <option value="Ужасы">Ужасы</option>
+                    <option value="Приключения2">Приключения</option>
+                    <option value="Детектив2">Детектив</option>
+                    <option value="Комедия">Комедия</option>
+                </select>
+                <br>
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
     </main>
 
     <footer>
-
+        <p>Елизавета Романова</p>
+        <p>
+            Почта: <a href="#">elizabethrp221@gmail.com</a>
+        </p>
     </footer>
 </body>
 </html>
